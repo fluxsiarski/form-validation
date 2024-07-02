@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/4726eae120.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+
+<body>
+
+  <div class="notifications">
+
+  </div>
+
+  <form class="contact-form" id="contact-form" novalidate>
+    <h1 class="contact-form__title">Contact Us</h1>
+
+    <div class="inputs-container">
+      <div class="form-group">
+        <label for="first-name">First Name <span>*</span></label>
+        <input class="tescik" type="text" id="first-name" name="first-name" required>
+        <span class="error" id="error-first-name">This field is required</span>
+      </div>
+
+      <div class="form-group">
+        <label for="last-name">Last Name <span>*</span></label>
+        <input type="text" id="last-name" name="last-name" required>
+        <span class="error" id="error-last-name">This field is required</span>
+      </div>
+
+    </div>
+
+    <div class="form-group--email">
+      <label for="mail">Email Adress <span>*</span></label>
+      <input type="email" id="mail" name="mail" required>
+      <span class="error" id="error-mail">This field is required</span>
+    </div>
+
+
+    <div class="checkbox-container">
+      <label>Query Type <span>*</span></label>
+
+      <div class="form-group--checkboxes">
+
+        <div class="form-group--checkbox">
+          <input type="radio" id="enquiry" name="query_type" value="enquiry">
+          <label for="enquiry">General Enquiry</label>
+        </div>
+
+        <div class="form-group--checkbox">
+          <input type="radio" id="request" name="query_type" value="request">
+          <label for="request">Support Request</label>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-area">
+      <label for="message">Message <span>*</span></label>
+      <textarea required id="message" name="message" rows="4" cols="50"></textarea>
+      <span class="error" id="error-message">This field is required</span>
+    </div>
+
+    <div class="consent">
+      <input type="checkbox" id="consent" name="consent">
+      <label for="consent"> I consent to being contacted by the team <span>*</span>
+      </label>
+      <span class="error" id="error-consent">This field is required</span>
+
+    </div>
+
+
+    <button id="submit-form" class="submit-Btn" type="submit">Submit</button>
+  </form>
+
+  <script src="./validation.js"></script>
+</body>
+
+</html>
